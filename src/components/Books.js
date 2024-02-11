@@ -32,18 +32,22 @@ export default function Books() {
     return (
       <React.Fragment>
         <h1>Today's Top 10 Best Sellers</h1>
-        <ul>
+        <div id="list">
           {books.slice(0, 10).map((book, index) => 
-            <li key={index}>
+            <div key={index} className="book" id={book.rank}>
               <h3>#{book.rank}: {book.title}</h3>
               <h4>By {book.author}</h4>
-              <p>{book.description}</p>
-              <a href={book.amazon_product_url} target="_blank">
-                <img src={book.book_image} alt={book.title} width="150px" />
-              </a>
-            </li>
+              <div className="bookImg">
+                <img src={book.book_image} alt={book.title} />
+                <div className="detail">
+                  <p>{book.description}</p>
+                  <a href={book.amazon_product_url} target="_blank">Buy Online
+                  </a>
+                </div>
+              </div>
+            </div>
           )}
-        </ul>
+        </div>
       </React.Fragment>
     );
   }

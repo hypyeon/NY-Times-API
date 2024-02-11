@@ -1,0 +1,83 @@
+@import url('https://fonts.googleapis.com/css2?family=Lobster&family=Roboto+Flex:opsz,wght@8..144,300;8..144,400;8..144,600;8..144,700&display=swap');
+$titleFont: "Lobster", sans-serif;
+$font: "Roboto Flex", sans-serif;
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+#root {
+  background-color: rgb(0, 31, 0);
+  color: rgb(233, 233, 233);
+  font-family: $font;
+  width: 100vw;
+  height: 100vh;
+  overflow-x: hidden;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+h1 {
+  font-family: $titleFont;
+  text-align: center;
+  font-size: 3rem;
+  margin-bottom: 8rem;
+}
+
+#list {
+  display: flex;
+  overflow-x: scroll;
+  scrollbar-width: thin;
+  scrollbar-color: white black;
+  height: 40vh;
+  margin: 0 1rem;
+  .book {
+    list-style: none;
+    padding: 1.5rem;
+    margin: 0 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    border: 3px solid rgba(245, 245, 245, 0.5);
+    border-radius: 15px;
+    h3 {
+      width: fit-content;
+    }
+    h4 {
+      color: rgb(210, 210, 210);
+    }
+    .bookImg {
+      width: 20vw;
+      height: 280px;
+      background-color: white;
+      display: flex;
+      border-radius: 8px;
+      img {
+        object-fit: cover;
+        height: 100%;
+        padding: .5rem;
+        text-align: center;
+      }
+      .detail {
+        color: black;
+        padding: 1rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        a {
+          margin: 0 auto;
+          text-decoration: none;
+          padding: .5rem 1rem;
+          background-color: black;
+          color: white;
+          border: none;
+          border-radius: 8px;
+        }
+      }
+    }
+  }
+}
