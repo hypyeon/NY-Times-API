@@ -32,7 +32,7 @@ h1 {
   overflow-x: scroll;
   scrollbar-width: thin;
   scrollbar-color: white black;
-  height: 40vh;
+  //height: 60vh;
   margin: 0 1rem;
   .book {
     list-style: none;
@@ -42,6 +42,7 @@ h1 {
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
+    gap: 1rem;
     border: 3px solid rgba(245, 245, 245, 0.5);
     border-radius: 15px;
     h3 {
@@ -51,8 +52,8 @@ h1 {
       color: rgb(210, 210, 210);
     }
     .bookImg {
-      width: 20vw;
-      height: 280px;
+      width: 26vw;
+      height: 32vh;
       background-color: white;
       display: flex;
       border-radius: 8px;
