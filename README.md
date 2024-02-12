@@ -1,5 +1,5 @@
 # Today's Top 10 Best Sellers
-By [Hayeong Pyeon](https://github.com/hypyeon)
+By [Hayeong Pyeon](https://www.hayeong.website)
 
 ## Table of Contents
 1. [Technologies Used](#technologies-used)
@@ -10,13 +10,15 @@ By [Hayeong Pyeon](https://github.com/hypyeon)
 6. [License](#license)
 
 ## Technologies used
-- HTML5, SCSS, JavaScript
-- React API
+- HTML, SCSS, JavaScript
+- Jest 
+- React API, `useReducer` hook
 
 ## Description
 - This is an in-class prompt provided by Epicodus.
-- This prompt is part of **NY Times API: Making an API Call with fetch and useState**.
-- This application shows real-time top 10 best seller books for the current date.  
+- This prompt is part of **NY Times API: Making an API Call with fetch and useState, Writing and Testing Reducer and Actions, and Implementing useReducer**.
+- This application shows real-time top 10 best selling books for the current date.  
+- *Current design is not responsive. Recommend to use standard Desktop viewport only, when opening the Github Pages provided below.*
 
 ## Setup Requirements
 1. Clone this repository to your desktop and open it with a text editor.
@@ -30,11 +32,11 @@ By [Hayeong Pyeon](https://github.com/hypyeon)
 5. Start a development server with `npm run start`.
 
 ## Link
-*to be updated*
-<a href="#" target="_blank">Today's Top 10 Best Sellers</a>
+[Today's Top 10 Best Selling Books](https://hypyeon.github.io/NY-Times-API/)
 
 ## Known Bugs
 - No known bug found as of Feb 11, 2024
+- *The API key exposed from a previous commit is effectively terminated and the new one is successfully secured. Please follow [Setup Requirements](#setup-requirements) to set up your own when cloning this repo.*
 
 ## License
-[MIT](/LICENSE.txt) Copyright © 2024 Hayeong Pyeon
+Copyright © 2024 Hayeong Pyeon | [MIT](/LICENSE.txt)
